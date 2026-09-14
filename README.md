@@ -41,19 +41,25 @@ git clone https://github.com/thedevnix/Rest-api-project.git
 cd Rest-api-project
 ```
 
-2. **Install dependencies:**
+2. **Initialize the project:**
 
 ```bash
-npm install
+npm init
 ```
 
-3. **Start the server:**
+3. **Install Express.js:**
+
+```bash
+npm i express
+```
+
+4. **Start the server:**
 
 ```bash
 node index.js
 ```
 
-4. **Open in browser:**
+5. **Open in browser:**
 
 ```text
 http://localhost:3000
@@ -62,8 +68,6 @@ http://localhost:3000
 ## 🧪 Postman
 
 Use Postman to test all REST API endpoints.
-
-Example:
 
 ```text
 GET     http://localhost:3000/api/users
@@ -82,7 +86,6 @@ Rest-api-project/
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
-├── postman/
 └── README.md
 ```
 
@@ -101,7 +104,7 @@ Rest-api-project/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to submit a Pull Request.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
 2. Create your feature branch
