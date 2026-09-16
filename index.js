@@ -47,7 +47,7 @@ app.put("/api/users/:id",(req,res)=>{
 
 app.patch("/api/users/:id",(req,res)=>{
     const id = Number(req.params.id);
-    const user = users.find(user => user.id===id);
+    const user = users.find(user => user.id === id);
 
     if(!user){
         return res.status(404).json({
@@ -62,8 +62,13 @@ app.patch("/api/users/:id",(req,res)=>{
     if(req.body.last_name){
         user.last_name = req.body.last_name;
     }
+
+    if(req.body.email){
+        user.email = req.body.email;
+    }
+
     return res.json(user);
-})
+});
 
 app.delete("/api/users/:id",(req,res)=>{
     const id = Number(req.params.id);
